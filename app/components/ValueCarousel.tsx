@@ -15,7 +15,7 @@ const CARDS = [
     place: "People",
     desc: "The community that calls it home",
     tag: "People",
-    src: "/assets/IMG_8669.webp",
+    src: "/assets/people.webp",
   },
   {
     id: 3,
