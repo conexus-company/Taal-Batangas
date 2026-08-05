@@ -1,0 +1,11 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#D7E7F3"/>
+  <rect y="620" width="1600" height="280" fill="#4D7B79"/>
+  <path d="M410 670L620 280L830 670H410Z" fill="#7AA36F"/>
+  <path d="M500 670L620 410L740 670H500Z" fill="#5F8A56"/>
+  <path d="M560 670L620 520L680 670H560Z" fill="#3C6A3A"/>
+  <path d="M900 680C900 580 980 500 1080 500C1180 500 1260 580 1260 680V760H900V680Z" fill="#86AB72"/>
+  <circle cx="1320" cy="170" r="70" fill="#F1D689"/>
+  <rect x="220" y="720" width="420" height="140" rx="20" fill="#B7D3D0"/>
+  <text x="760" y="780" fill="#203B3A" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700">Taal Volcano</text>
+</svg>

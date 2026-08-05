@@ -1,0 +1,16 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#E8D9BE"/>
+  <rect y="620" width="1600" height="280" fill="#7E8E62"/>
+  <rect x="180" y="380" width="220" height="220" rx="14" fill="#A85F3C"/>
+  <rect x="220" y="320" width="140" height="80" rx="10" fill="#C07B4C"/>
+  <rect x="280" y="410" width="60" height="190" fill="#5A3C2A"/>
+  <rect x="600" y="360" width="260" height="240" rx="16" fill="#8B4F2E"/>
+  <rect x="650" y="310" width="160" height="70" rx="10" fill="#C77F4A"/>
+  <rect x="710" y="380" width="40" height="220" fill="#53301E"/>
+  <rect x="1060" y="420" width="200" height="180" rx="12" fill="#A85F3C"/>
+  <rect x="1100" y="360" width="120" height="80" rx="10" fill="#C77F4A"/>
+  <rect x="1140" y="440" width="40" height="160" fill="#53301E"/>
+  <path d="M0 700C180 640 360 620 560 640C760 660 920 760 1160 760C1320 760 1460 720 1600 660V900H0V700Z" fill="#4D6B4F"/>
+  <circle cx="1320" cy="180" r="56" fill="#F7CF83"/>
+  <text x="780" y="780" fill="#3C2A1A" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700">Ancestral Houses</text>
+</svg>

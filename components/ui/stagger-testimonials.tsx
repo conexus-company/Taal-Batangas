@@ -10,40 +10,35 @@ const testimonials = [
       "The best part of Taal was the pace. No rushing, just stories and coffee on a cobblestone lane.",
     by: "Miguel R.",
     role: "Guided heritage walk",
-    imgSrc:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=600&auto=format&fit=crop",
+    imgSrc: "/assets/IMG_8647.webp",
   },
   {
     quote:
       "Our guide brought every ancestral house to life. It felt like walking through a living museum.",
     by: "Andrea S.",
     role: "Casa Villavicencio tour",
-    imgSrc:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=600&auto=format&fit=crop",
+    imgSrc: "/assets/IMG_8669.webp",
   },
   {
     quote:
       "Two days, one lake, a hundred stories. We came for the basilica and stayed for the people.",
     by: "Ben & Liza",
     role: "Slow weekend",
-    imgSrc:
-      "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=600&auto=format&fit=crop",
+    imgSrc: "/assets/IMG_8685.webp",
   },
   {
     quote:
       "The coffee was strong, the stories stronger. Taal slows you down without you noticing.",
     by: "Carlo M.",
     role: "Food walk",
-    imgSrc:
-      "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?q=80&w=600&auto=format&fit=crop",
+    imgSrc: "/assets/IMG_8687.webp",
   },
   {
     quote:
       "Every street corner feels preserved in time. The best sunrise I have seen in the Philippines.",
     by: "Nica D.",
     role: "Dawn walk",
-    imgSrc:
-      "https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=600&auto=format&fit=crop",
+    imgSrc: "/assets/IMG_8693.webp",
   },
 ];
 

@@ -1,0 +1,16 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F4EAD8"/>
+  <rect y="600" width="1600" height="300" fill="#8C9D6A"/>
+  <rect x="100" y="260" width="340" height="340" rx="24" fill="#7B5E3C"/>
+  <rect x="140" y="220" width="260" height="120" rx="16" fill="#C6A36A"/>
+  <rect x="180" y="320" width="180" height="220" rx="10" fill="#E3C28E"/>
+  <rect x="210" y="340" width="120" height="140" rx="8" fill="#F6E7C7"/>
+  <rect x="260" y="300" width="20" height="60" fill="#7B5E3C"/>
+  <path d="M272 220L332 160L392 220V300H272V220Z" fill="#A96E3B"/>
+  <rect x="1040" y="280" width="220" height="250" rx="20" fill="#734D2E"/>
+  <path d="M1060 300L1150 220L1240 300V520H1060V300Z" fill="#A96E3B"/>
+  <rect x="1090" y="330" width="160" height="170" rx="12" fill="#E6C18F"/>
+  <circle cx="1150" cy="160" r="60" fill="#F6D98F"/>
+  <path d="M760 420C760 360 812 310 872 310C932 310 984 360 984 420V520H760V420Z" fill="#6E8570"/>
+  <text x="800" y="760" fill="#2F3C2A" font-family="Georgia, 'Times New Roman', serif" font-size="54" font-weight="700">Taal Heritage</text>
+</svg>

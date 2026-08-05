@@ -120,91 +120,45 @@ export default function Home() {
           <div className="dest-card">
             <div className="dest-top">
               <div>
-                <div className="place">Basilica Tour</div>
-                <div className="sub">Taal Town Proper</div>
+                <div className="place">Minor Basilica of St. Martin de Tours</div>
+                <div className="sub">Taal Basilica · Taal Town Proper</div>
               </div>
               <div className="slots">★ Heritage walk</div>
             </div>
             <div className="image-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=700&auto=format&fit=crop"
-                alt="Basilica interior"
+                src="/assets/1.webp"
+                alt="Minor Basilica of St. Martin de Tours"
               />
               <span className="open-trip">Open Trip</span>
             </div>
             <div className="meta-row">
               <span className="m">Free</span>
               <span className="m">Timed entry</span>
-              <span className="m">Sat–Sun</span>
+              <span className="m">Daily</span>
             </div>
           </div>
 
           <div className="dest-card">
             <div className="dest-top">
               <div>
-                <div className="place">Casa Villavicencio</div>
-                <div className="sub">Ancestral house</div>
+                <div className="place">Sta. Lucia Well</div>
+                <div className="sub">Heritage well · Taal Town Proper</div>
               </div>
-              <div className="slots">★ 5 Days open</div>
+              <div className="slots">★ Well heritage</div>
             </div>
             <div className="image-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=700&auto=format&fit=crop"
-                alt="Ancestral house facade"
-              />
-              <span className="open-trip">Open Trip</span>
-            </div>
-            <div className="meta-cols">
-              <div>Housekeeping<b>Beside the Basilica</b></div>
-              <div>Entry<b>Donation</b></div>
-              <div>Tour<b>Guided</b></div>
-            </div>
-          </div>
-
-          <div className="dest-card">
-            <div className="dest-top">
-              <div>
-                <div className="place">Agoncillo Museum</div>
-                <div className="sub">Heritage tours</div>
-              </div>
-              <div className="slots">★ 2 Days open</div>
-            </div>
-            <div className="image-wrap">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=700&auto=format&fit=crop"
-                alt="Taal valley in soft light"
-              />
-              <span className="open-trip">Open Trip</span>
-            </div>
-            <div className="meta-row">
-              <span className="m">₱50.00</span>
-              <span className="m">Open Trip</span>
-              <span className="m">Dry season</span>
-            </div>
-          </div>
-
-          <div className="dest-card">
-            <div className="dest-top">
-              <div>
-                <div className="place">San Martin Chapel</div>
-                <div className="sub">Barangay Dueño</div>
-              </div>
-              <div className="slots">★ Golden hour</div>
-            </div>
-            <div className="image-wrap">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=700&auto=format&fit=crop"
-                alt="Heritage street at dusk"
+                src="/assets/2.jpg"
+                alt="Sta. Lucia Well"
               />
               <span className="open-trip">Open Trip</span>
             </div>
             <div className="meta-row">
               <span className="m">Free</span>
-              <span className="m">Sunrise</span>
+              <span className="m">Landmark</span>
               <span className="m">All year</span>
             </div>
           </div>
@@ -212,45 +166,68 @@ export default function Home() {
           <div className="dest-card">
             <div className="dest-top">
               <div>
-                <div className="place">Taal Lake Lookout</div>
-                <div className="sub">Caldera viewpoint</div>
+                <div className="place">Archdiocesan Shrine of Our Lady of Caysasay</div>
+                <div className="sub">Caysasay Shrine · Barangay Caysasay</div>
               </div>
-              <div className="slots">★ Panorama</div>
+              <div className="slots">★ Pilgrimage</div>
             </div>
             <div className="image-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=700&auto=format&fit=crop"
-                alt="Lake and shoreline"
+                src="/assets/3.png"
+                alt="Archdiocesan Shrine of Our Lady of Caysasay"
               />
               <span className="open-trip">Open Trip</span>
             </div>
-            <div className="meta-cols">
-              <div>View<b>Full lake</b></div>
-              <div>Entry<b>Free</b></div>
-              <div>Best<b>Dawn</b></div>
+            <div className="meta-row">
+              <span className="m">Free</span>
+              <span className="m">Pilgrimage</span>
+              <span className="m">Daily</span>
             </div>
           </div>
 
           <div className="dest-card">
             <div className="dest-top">
               <div>
-                <div className="place">Ancestral Street</div>
-                <div className="sub">Cobblestone walk</div>
+                <div className="place">Museo nina Marcela Mariño at Felipe Agoncillo</div>
+                <div className="sub">Marcela Agoncillo Museum</div>
               </div>
-              <div className="slots">★ Guided stroll</div>
+              <div className="slots">★ Guided tours</div>
             </div>
             <div className="image-wrap">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=700&auto=format&fit=crop"
-                alt="Cobblestone street"
+                src="/assets/4.png"
+                alt="Museo nina Marcela Mariño at Felipe Agoncillo"
               />
               <span className="open-trip">Open Trip</span>
             </div>
             <div className="meta-row">
-              <span className="m">₱20.00</span>
-              <span className="m">1 hr</span>
+              <span className="m">₱50.00</span>
+              <span className="m">Guided</span>
+              <span className="m">Sat–Sun</span>
+            </div>
+          </div>
+
+          <div className="dest-card">
+            <div className="dest-top">
+              <div>
+                <div className="place">Museo nina Leon at Galicano Apacible</div>
+                <div className="sub">Apacible Ancestral House</div>
+              </div>
+              <div className="slots">★ Heritage house</div>
+            </div>
+            <div className="image-wrap">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/5.png"
+                alt="Museo nina Leon at Galicano Apacible"
+              />
+              <span className="open-trip">Open Trip</span>
+            </div>
+            <div className="meta-row">
+              <span className="m">Donation</span>
+              <span className="m">Guided</span>
               <span className="m">Daily</span>
             </div>
           </div>
@@ -273,7 +250,7 @@ export default function Home() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className="feature-bg"
-            src="https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=1600&auto=format&fit=crop"
+            src="/assets/IMG_8687.webp"
             alt="Basilica of Taal at golden hour"
           />
           <div className="feature-info">
@@ -345,7 +322,7 @@ export default function Home() {
       <section className="cta-section relative mt-20 overflow-hidden md:mt-28">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop"
+          src="/assets/IMG_8693.webp"
           alt="Taal heritage town"
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"

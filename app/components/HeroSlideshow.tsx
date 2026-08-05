@@ -4,34 +4,35 @@ import { useCallback, useLayoutEffect, useRef } from "react";
 import type { CSSProperties } from "react";
 import gsap from "gsap";
 
-/* Unsplash CDN (the same one already used elsewhere on this page) instead of
-   Wikimedia's thumbnail proxy, which throttles/403s requests from
-   datacenter/cloud IP ranges. Every slide also keeps its OWN fallback so one
-   failed image can never collapse all six strips to an identical backup. */
+/* The slideshow uses local, project-owned photo assets so the hero remains
+   reliable without depending on external image hosts. Each slide also keeps
+   its own fallback so one missing image can never collapse all six strips to
+   the same backup. */
 const SLIDES = [
   {
-    src: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format&fit=crop",
-    fallback:
-      "https://images.unsplash.com/photo-1438032005730-c779502df39b?q=80&w=1600&auto=format&fit=crop",
-    alt: "Minor Basilica of Saint Martin de Tours in Taal, Batangas",
+    src: "/assets/IMG_8647.webp",
+    fallback: "/assets/IMG_8669.webp",
+    alt: "Photo of Taal, Batangas",
   },
   {
-    src: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop",
-    fallback:
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1600&auto=format&fit=crop",
-    alt: "Ancestral houses in Taal, Batangas",
+    src: "/assets/IMG_8669.webp",
+    fallback: "/assets/IMG_8685.webp",
+    alt: "Photo of Taal, Batangas",
   },
   {
-    src: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1600&auto=format&fit=crop",
-    fallback:
-      "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600&auto=format&fit=crop",
-    alt: "Taal Volcano rising from Taal Lake",
+    src: "/assets/IMG_8685.webp",
+    fallback: "/assets/IMG_8687.webp",
+    alt: "Photo of Taal, Batangas",
   },
   {
-    src: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop",
-    fallback:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop",
-    alt: "Heritage streets and valley light in Taal, Batangas",
+    src: "/assets/IMG_8687.webp",
+    fallback: "/assets/IMG_8693.webp",
+    alt: "Photo of Taal, Batangas",
+  },
+  {
+    src: "/assets/IMG_8693.webp",
+    fallback: "/assets/IMG_8647.webp",
+    alt: "Photo of Taal, Batangas",
   },
 ];
 
