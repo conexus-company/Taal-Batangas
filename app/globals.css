@@ -2007,7 +2007,7 @@ html.shutter-active .page-frame-line {
 }
 .cta-section .sub {
   font-size: 13px;
-  color: #6b6b6b;
+  color: rgba(238, 243, 250, 0.8);
   margin-bottom: 26px;
 }
 .cta-form {

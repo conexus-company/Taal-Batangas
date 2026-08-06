@@ -308,6 +308,7 @@ export default function Home() {
           aria-hidden="true"
           className="absolute inset-0 h-full w-full object-cover"
         />
+        <div className="absolute inset-0 bg-ink/70" aria-hidden="true" />
         <div className="relative z-10 mx-auto max-w-[1200px] px-10 py-16 text-ivory md:py-20">
           <h2 className="text-ivory">Plan a slow day in Taal</h2>
           <p className="sub text-ivory/80">

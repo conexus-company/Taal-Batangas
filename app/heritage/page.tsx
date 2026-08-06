@@ -64,7 +64,7 @@ export default function HeritagePage() {
       role: "Mother of the Philippine Flag",
       life: "1859 – 1946",
       description: "Patriotic daughter of Taal who sewed the first Philippine National Flag in Hong Kong, as requested by General Emilio Aguinaldo.",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=600&auto=format&fit=crop",
+      image: "/assets/Marcela%20Mari%C3%B1o%20de%20Agoncillo.jfif",
       citation: "Agoncillo House Museum"
     },
     {
@@ -72,7 +72,7 @@ export default function HeritagePage() {
       role: "Godmother of the Revolution",
       life: "1852 – 1929",
       description: "A wealthy revolutionary supporter who donated her fortune, food, and the SS Bulusan (the first transport ship of the revolution) to the cause.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
+      image: "/assets/Gliceria%20Marella%20de%20Villavicencio.jfif",
       citation: "Casa Villavicencio"
     },
     {
@@ -80,7 +80,7 @@ export default function HeritagePage() {
       role: "Revolutionary Leader & Jurist",
       life: "1861 – 1901",
       description: "Right-hand man to Jose Rizal, active member of the propaganda movement, and later a delegate to the Malolos Congress.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop",
+      image: "/assets/Don%20Leon%20Apacible.jfif",
       citation: "Apacible Museum"
     }
   ];
@@ -245,13 +245,13 @@ export default function HeritagePage() {
                   className="group bg-white border border-hairline rounded-none overflow-hidden hover:border-rust/60 transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
-                    <div className="aspect-[4/3] w-full overflow-hidden relative border-b border-hairline bg-linen">
+                    <div className="aspect-[3/4] w-full overflow-hidden relative border-b border-hairline bg-linen">
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img 
                         src={fig.image} 
                         alt={fig.name} 
                         onError={(e) => { e.currentTarget.src = FALLBACK_IMAGE; }}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                        className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
                       />
                       <div className="absolute bottom-3 left-3 bg-ink/90 backdrop-blur-sm px-2.5 py-1 rounded-none text-[9px] uppercase tracking-widest font-mono text-white border border-white/10">
                         {fig.citation}
