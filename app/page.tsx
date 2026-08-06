@@ -1,5 +1,8 @@
 import HeroMount from "./components/HeroMount";
 import ValueCarousel from "./components/ValueCarousel";
+import HeritageTrails from "./components/HeritageTrails";
+import InteractiveMap from "./components/InteractiveMap";
+import WhatsHappening from "./components/WhatsHappening";
 import { Footer2 } from "@/components/ui/footer-2";
 import { Testimonials } from "@/components/ui/stagger-testimonials";
 
@@ -234,71 +237,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== FEATURED PICK ===== */}
+      {/* ===== WHAT'S HAPPENING IN TAAL ===== */}
       <section className="feature-section">
         <div className="pick-header">
           <div>
-            <span className="tag">Heart of the Town · 2026</span>
-            <h2>This Season&apos;s Featured</h2>
+            <span className="tag">Events & Festivals · 2026</span>
+            <h2>What&apos;s Happening in Taal</h2>
           </div>
           <div className="sub">
-            One hand-picked walk, our favorites in full detail.
+            Festivals, cultural events, and advisories — pick a date on the calendar.
           </div>
         </div>
 
-        <div className="feature-card">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className="feature-bg"
-            src="/assets/IMG_8687.webp"
-            alt="Basilica of Taal at golden hour"
-          />
-          <div className="feature-info">
-            <span className="tag">★ Featured Walk · 3 hours</span>
-            <h3>Basilica &amp; the Ancients</h3>
-            <p>
-              A slow walk from the grand Basilica through cobblestone lanes and
-              ancestral homes, with local stories at every turn.
-            </p>
-            <div className="feature-meta">
-              <span>₱300 / person</span>
-              <span>2x daily</span>
-              <span>Guide included</span>
-            </div>
-            <button type="button" className="btn-flat">Book this walk</button>
-          </div>
-        </div>
+        <WhatsHappening />
       </section>
 
-      {/* ===== HOW IT WORKS ===== */}
+      {/* ===== HERITAGE TRAILS ===== */}
       <section className="steps-section">
         <div className="pick-header">
           <div>
-            <span className="tag">Simple · Slow · Local</span>
-            <h2>How it Works</h2>
+            <span className="tag">Guided Experiences · Slow Travel</span>
+            <h2>Heritage Trails</h2>
           </div>
           <div className="sub">
-            Three easy steps to a memorable day in Taal.
+            Choose a trail, see your route, and follow the story stop by stop.
           </div>
         </div>
 
-        <div className="steps">
-          <div className="step">
-            <div className="step-num">01</div>
-            <h4>Choose your walk</h4>
-            <p>Pick from curated heritage, food, or people tours.</p>
+        <HeritageTrails />
+      </section>
+
+      {/* ===== INTERACTIVE MAP ===== */}
+      <section className="map-section">
+        <div className="pick-header">
+          <div>
+            <span className="tag">Explore · Live Map</span>
+            <h2>Interactive Map</h2>
           </div>
-          <div className="step">
-            <div className="step-num">02</div>
-            <h4>Pick a date</h4>
-            <p>Reserve your slot in just a few taps.</p>
-          </div>
-          <div className="step">
-            <div className="step-num">03</div>
-            <h4>Slow down & arrive</h4>
-            <p>A local guide leads you through the story of the town.</p>
+          <div className="sub">
+            Pins for everything you need — heritage, food, shops, and more.
           </div>
         </div>
+
+        <InteractiveMap />
       </section>
 
       {/* ===== TESTIMONIALS ===== */}

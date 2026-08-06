@@ -7,6 +7,7 @@ import NavbarWrapper from "./components/NavbarWrapper";
 import TransitionLink from "./components/transitions/TransitionLink";
 import IntroScreen from "./components/IntroScreen";
 import ScrollReveal from "./components/ScrollReveal";
+import FloatingChat from "./components/FloatingChat";
 
 const playfair = Playfair({
   variable: "--font-fraunces",
@@ -72,6 +73,9 @@ export default function RootLayout({
               </ul>
             </nav>
           </NavbarWrapper>
+
+          {/* ===== FLOATING AI CHATBOT ===== */}
+          <FloatingChat />
 
           {children}
         </TransitionProvider>

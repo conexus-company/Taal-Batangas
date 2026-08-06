@@ -17,6 +17,13 @@ interface Attraction {
   hours: string;
 }
 
+type LeafletMarker = {
+  remove(): void;
+  setIcon(icon: unknown): void;
+  openPopup(): void;
+  closePopup(): void;
+};
+
 const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop";
 
 const ATTRACTIONS_DATA: Attraction[] = [
@@ -115,13 +122,19 @@ export default function AttractionsPage() {
   const [activePreviewImage, setActivePreviewImage] = useState<string | null>(null);
   
   const mapRef = useRef<HTMLDivElement>(null);
-  const leafletMapInstance = useRef<any>(null);
-  const markersRef = useRef<{ [key: string]: any }>({});
+  const leafletMapInstance = useRef<{
+    setView(latLng: [number, number], zoom: number): unknown;
+    panTo(latLng: [number, number], opts?: object): void;
+  } | null>(null);
+  const markersRef = useRef<Record<string, LeafletMarker>>({});
   const filterRef = useRef<HTMLDivElement>(null);
   const [filterHeight, setFilterHeight] = useState<number>(44);
   const [mounted, setMounted] = useState(false);
 
-  useEffect(() => { setMounted(true); }, []);
+  useEffect(() => {
+    const raf = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(raf);
+  }, []);
 
   useEffect(() => {
     const el = filterRef.current;
@@ -174,6 +187,7 @@ export default function AttractionsPage() {
 
   useEffect(() => {
     if (!leafletLoaded || !mapRef.current || typeof window === "undefined") return;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const L = (window as any).L;
     if (!L) return;
     if (!leafletMapInstance.current) {
@@ -223,6 +237,7 @@ export default function AttractionsPage() {
 
   useEffect(() => {
     if (!leafletLoaded || !leafletMapInstance.current || typeof window === "undefined") return;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const L = (window as any).L;
     if (!L) return;
     // Close all popups first, then open only the selected one
@@ -234,20 +249,18 @@ export default function AttractionsPage() {
         iconSize: [32, 32],
         iconAnchor: [16, 32]
       });
-      (marker as any).setIcon(customIcon);
+      marker.setIcon(customIcon);
       if (isSelected) {
-        (marker as any).openPopup();
+        marker.openPopup();
       } else {
-        (marker as any).closePopup();
+        marker.closePopup();
       }
     });
-    if (selectedAttraction) {
-      leafletMapInstance.current.panTo([selectedAttraction.lat, selectedAttraction.lng], {
-        animate: true,
-        duration: 0.8
-      });
-    }
-  }, [selectedId, leafletLoaded, filteredAttractions, selectedAttraction]);
+    leafletMapInstance.current.panTo([selectedAttraction.lat, selectedAttraction.lng], {
+      animate: true,
+      duration: 0.8
+    });
+  }, [selectedId, leafletLoaded, selectedAttraction.lat, selectedAttraction.lng]);
 
   const getCategoryIcon = (cat: string) => {
     switch (cat) {
