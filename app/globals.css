@@ -1137,15 +1137,30 @@ html.shutter-active .page-frame-line {
   background: #111;
 }
 .ev-tl-day {
-  font-size: 12px;
-  font-weight: 800;
-  color: #333;
-  font-variant-numeric: tabular-nums;
-  line-height: 1;
-}
-.ev-tl-row.is-selected .ev-tl-day {
-  color: #fff;
-}
+   font-size: 12px;
+   font-weight: 800;
+   color: #333;
+   font-variant-numeric: tabular-nums;
+   line-height: 1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1px;
+ }
+ .ev-tl-month-label {
+   font-size: 7px;
+   font-weight: 600;
+   color: #888;
+   text-transform: uppercase;
+   letter-spacing: 0.3px;
+   line-height: 1;
+ }
+ .ev-tl-row.is-selected .ev-tl-day {
+   color: #fff;
+ }
+ .ev-tl-row.is-selected .ev-tl-month-label {
+   color: #aaa;
+ }
 .ev-tl-dot {
   width: 5px;
   height: 5px;

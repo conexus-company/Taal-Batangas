@@ -123,6 +123,11 @@ const EVENTS: EventItem[] = [
   },
 ];
 
+const MONTHS_ABBR = [
+  "JAN", "FEB", "MAR", "APR", "MAY", "JUN",
+  "JUL", "AUG", "SEP", "OCT", "NOV", "DEC",
+];
+
 const MONTHS = [
   "January",
   "February",
@@ -219,6 +224,7 @@ export default function WhatsHappening() {
               {EVENTS.map((e) => {
                 const isSel = e.id === selectedId;
                 const tMeta = TYPE_META[e.type];
+                const eMonthName = MONTHS_ABBR[e.month !== undefined ? e.month : month];
                 return (
                   <li key={e.id} className="ev-tl-item">
                     <button
@@ -227,6 +233,7 @@ export default function WhatsHappening() {
                       onClick={() => selectEvent(e)}
                     >
                       <span className="ev-tl-day">
+                        <span className="ev-tl-month-label">{eMonthName}</span>
                         {e.day}
                         {e.endDay ? `–${e.endDay}` : ""}
                       </span>
