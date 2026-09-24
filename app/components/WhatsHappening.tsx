@@ -9,6 +9,7 @@ type EventItem = {
   id: string;
   day: number;
   endDay?: number;
+  month?: number;
   type: EventType;
   title: string;
   location: string;
@@ -21,9 +22,24 @@ const TYPE_META: Record<
   EventType,
   { label: string; badge: string; icon: string; color: string }
 > = {
-  festival: { label: "Festival", badge: "Featured Festival", icon: "🎭", color: "#b98a2f" },
-  cultural: { label: "Cultural", badge: "Cultural Event", icon: "🎪", color: "#1e4f9c" },
-  announcement: { label: "Advisory", badge: "Announcement", icon: "📢", color: "#b91c1c" },
+  festival: {
+    label: "Festival",
+    badge: "Featured Festival",
+    icon: "🎭",
+    color: "#b98a2f",
+  },
+  cultural: {
+    label: "Cultural",
+    badge: "Cultural Event",
+    icon: "🎪",
+    color: "#1e4f9c",
+  },
+  announcement: {
+    label: "Advisory",
+    badge: "Announcement",
+    icon: "📢",
+    color: "#b91c1c",
+  },
 };
 
 const EVENTS: EventItem[] = [
@@ -62,10 +78,10 @@ const EVENTS: EventItem[] = [
   },
   {
     id: "pasubat",
-    day: 20,
-    endDay: 24,
+    day: 3,
+    month: 4,
     type: "festival",
-    title: "El Pasubat Festival",
+    title: "Araw ng Taal",
     location: "Taal Heritage Town Plaza",
     description:
       "Celebrate Taal's rich culture through traditional dances, local cuisine, artisan exhibits, and live performances.",
@@ -108,8 +124,18 @@ const EVENTS: EventItem[] = [
 ];
 
 const MONTHS = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 export default function WhatsHappening() {
@@ -124,8 +150,7 @@ export default function WhatsHappening() {
   const [fade, setFade] = useState<{ src: string; key: number } | null>(null);
   const fadeKey = useRef(0);
 
-  const selected =
-    EVENTS.find((e) => e.id === selectedId) ?? defaultEvent;
+  const selected = EVENTS.find((e) => e.id === selectedId) ?? defaultEvent;
 
   const selectEvent = (e: EventItem) => {
     if (e.id === selectedId) return;
@@ -139,7 +164,9 @@ export default function WhatsHappening() {
   };
 
   const meta = TYPE_META[selected.type];
-  const dateLabel = `${monthName} ${selected.day}${
+  const eventMonth = selected.month !== undefined ? selected.month : month;
+  const eventMonthName = MONTHS[eventMonth];
+  const dateLabel = `${eventMonthName} ${selected.day}${
     selected.endDay ? `–${selected.endDay}` : ""
   }`;
 
